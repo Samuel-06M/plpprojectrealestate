@@ -4,10 +4,8 @@ from .models import Booking, Client
 
 
 def index(request):
-   users=Client.object.all()
-   bookings=Booking.object.all()
-   
-   return render(request, 'dreamdwell/index.html',{"users":users,"bookings":bookings})
+    """Render the index page."""
+    return render(request, 'dreamdwell/index.html')
 
 def properties(request):
     """Render the properties page."""
